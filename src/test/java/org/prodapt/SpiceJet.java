@@ -41,7 +41,7 @@ public class SpiceJet {
 	}
 	
 	@Test
-	public static void TC() {
+	public static void TC7(){
 		
 		
 	}
@@ -51,5 +51,20 @@ public class SpiceJet {
 		
 		
 	}
+	
+	
+	@Test
+	public static void TC9(){
+		
+		
+	}
+	
+	@Test
+	public static void TC10() {
+		
+		
+	}
+	
+	
 
 }
