@@ -27,5 +27,29 @@ public class SpiceJet {
 		
 		
 	}
+	
+	@Test
+	public static void TC5() {
+		
+		
+	}
+	
+	@Test
+	public static void TC6() {
+		
+		
+	}
+	
+	@Test
+	public static void TC() {
+		
+		
+	}
+	
+	@Test
+	public static void TC8() {
+		
+		
+	}
 
 }
