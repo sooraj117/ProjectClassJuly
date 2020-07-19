@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 
 public class SpiceJet {
 	static WebDriver driver;
+	static WebElement dd;
 	
 	
 	
