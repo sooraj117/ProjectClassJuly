@@ -5,7 +5,7 @@
     <classes>
       <class name="org.prodapt.SpiceJet">
         <methods>
-          <include name="TC4"/>
+          <include name="TC5"/>
         </methods>
       </class> <!-- org.prodapt.SpiceJet -->
     </classes>

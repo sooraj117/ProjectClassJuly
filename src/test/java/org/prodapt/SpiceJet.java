@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -93,7 +94,7 @@ public class SpiceJet {
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public static void TC4() throws InterruptedException, AWTException {
 		driver.get("http://demo.guru99.com/test/upload/");
 		String path="C:\\Users\\10657527\\Desktop\\Venkatraman.docx";
@@ -114,15 +115,27 @@ public class SpiceJet {
 		robot.keyRelease(KeyEvent.VK_V);
 		// press enter
 		robot.setAutoDelay(3000);
-		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_ENTER);o
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
-	}
+	} 
 	
 	@Test
 	public static void TC5() {
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\sasti Nb\\eclipse-workspace\\sampleprojectMaven\\Driver\\chromedriver.exe");
 		
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
 		
+		driver.findElement(By.name("q")).sendKeys("selenium");;
+		
+		    
+		String url = "//span[contains(text(),'selenium]'";
+		List<WebElement> all = driver.findElements(By.xpath(url));
+		
+		int count = all.size();
+		System.out.println(count);
 	}
 	
 }
