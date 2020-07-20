@@ -20,7 +20,11 @@ public class SpiceJet {
 	static WebDriver driver;
 	static WebElement dd;
 	
-	
+	@Test
+	public void TC() {
+		
+		
+	}
 	
 	@Test(priority = 0,enabled=false)
 	public static void TC1() {
