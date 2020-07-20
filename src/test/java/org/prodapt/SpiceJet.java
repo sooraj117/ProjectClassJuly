@@ -19,7 +19,11 @@ import org.testng.annotations.Test;
 public class SpiceJet {
 	static WebDriver driver;
 	
-	
+	@Test
+	public void TC() {
+		
+		
+	}
 	
 	@Test(priority = 0,enabled=false)
 	public static void TC1() {
