@@ -14,11 +14,14 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.testng.annotations.Test;
 
 public class SpiceJet {
 	static WebDriver driver;
 	static WebElement dd;
+	static Action a;
+	static Robot r;
 	
 	@Test
 	public void TC() {
