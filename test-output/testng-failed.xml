@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.prodapt.SpiceJet">
+      <class name="org.prodapt.SpiceAllsuddestions">
         <methods>
-          <include name="TC5"/>
+          <include name="tc"/>
         </methods>
-      </class> <!-- org.prodapt.SpiceJet -->
+      </class> <!-- org.prodapt.SpiceAllsuddestions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
