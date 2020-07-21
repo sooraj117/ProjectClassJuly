@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class SpiceAllsuddestions {
@@ -20,7 +21,7 @@ public class SpiceAllsuddestions {
 	     WebElement sel = driver.findElement(By.name("q"));
 	     sel.sendKeys("selenium");
 	     
-	     String xx = "//span[contains(text(),'selenium')]";
+	     String xx = "//span[contains( (),'selenium')]";
 	     
 	     List<WebElement> li = driver.findElements(By.xpath(xx));
 	     int count = li.size();
@@ -31,6 +32,17 @@ public class SpiceAllsuddestions {
 	    	 System.out.println(tvt);
 			
 		}
+	     Select s = new Select(sel);
+	     List< WebElement > lll = s.getOptions();
+	     for(int i=0;i<=lll.size();i++) {
+	    	 WebElement ghg = lll.get(i);
+	    	 String txt = ghg.getText();
+	    	 System.out.println(txt);
+	    	 s.selectByVisibleText(txt);
+	    	 WebElement sss = lll.get(i);
+	    	 String ggg = sss.getAttribute ("value");
+	    	 s.selectByValue(ggg);
+	     }
 	     
 	     
 	     li.get(count - 1).click();
